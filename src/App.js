@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import linkedin from './assests/linkedin_icon.png';
-import youtube from './assests/youtube_icon.png';
+import Nav from './components/nav/navHeader';
+import linkedin from './assets/linkedin_icon.png';
+import youtube from './assets/youtube_icon.png';
+import Section from './components/section';
+import Career from './components/career/careerSection';
 
 function App() {
   return (
     <div className="App">
+      <Nav></Nav>
       <header className="App-header">
         <code>Hi! Im Deelaka Algawatta</code>
         <p>Software Engineer, Tech Enthusiast</p>
@@ -18,7 +22,17 @@ function App() {
         </div>
         <div class='icon-scroll'></div>
       </header>
+      <Section title={'Experiences'}>
+        <Career
+          company={'ICP Technologies (PVT) LTD'}
+          position={'Senior Software Engineer / Lead'}
+          duration={'1.5yrs'}
+          description={'blah blah blah'}
+        />
+      </Section>
     </div>
+
+
   );
 }
 
