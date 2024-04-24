@@ -4,8 +4,8 @@ import './section.css';
 
 const Section = ({ title, children }) => {
   return (
-    <div>
-      <p>{title}</p>
+    <div className="sectionContainer">
+      <code>{title}</code >
       {children}
     </div>
   );

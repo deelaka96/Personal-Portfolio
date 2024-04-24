@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.subText{
+  font-size: medium;
+}
+
 .social-logo {
   height: 6vmin;
   pointer-events: none;

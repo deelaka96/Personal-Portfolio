@@ -3,11 +3,12 @@ import './careerSection.css';
 
 const Career = ({ company, position, duration, description }) => {
     return (
-        <div>
-            <p>{company}</p>
+        <div className="careerContainer">
+            <p className="careerCompany">{company}</p>
             <p>{position}</p>
             <p>{duration}</p>
-            <p>{description}</p>
+            <p className="careerDescription">{description.map((obj) => { return <p>{obj.children[0].text}</p> }
+            )}</p>
         </div>
     );
 }
